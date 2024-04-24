@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url(./fonts/Montserrat.woff2) format('woff2');
+  }
+}
+
+@keyframes press {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0.85);
+  }
+}
+
+.press-animation {
+  animation: press 0.2s ease-in-out forwards;
+}
