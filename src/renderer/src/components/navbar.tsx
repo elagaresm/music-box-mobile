@@ -14,7 +14,7 @@ export default function Navbar({ className }: NavbarProps): JSX.Element {
 
   return (
     <nav
-      className={`absolute bottom-0 left-0 right-0 flex h-[100px] w-full rotate-180 items-center justify-center overflow-hidden rounded-full px-4 shadow-lg ${className} bg-white`}
+      className={`flex h-[100px] w-full rotate-180 items-center justify-center rounded-full bg-white px-4 shadow-lg ${className}`}
     >
       <div className="flex w-full rotate-180 items-center justify-around">
         {buttons.map(({ name, icon }) => {

@@ -25,3 +25,26 @@
 .press-animation {
   animation: press 0.2s ease-in-out forwards;
 }
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    visibility: hidden;
+  }
+
+  .scrollbar:hover {
+    /* display: block; */
+    visibility: visible;
+  }
+
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border-radius: 100vh;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #c2c1c1
+  }
+}
